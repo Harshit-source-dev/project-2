@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FlavourHub Restaurant (New Version)</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: #f2fff9;
+    }
+
+    header {
+        background: #0b7d71;
+        color: white;
+        text-align: center;
+        padding: 28px;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+    }
+
+    nav {
+        background: #b8efe7;
+        text-align: center;
+        padding: 12px;
+    }
+
+    nav a {
+        color: #064b44;
+        font-weight: bold;
+        text-decoration: none;
+        margin: 0 18px;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    main {
+        max-width: 1100px;
+        margin: auto;
+        padding: 22px;
+    }
+
+    section {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid #a1dfd4;
+        margin-bottom: 35px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.10);
+    }
+
+    h2 {
+        color: #064b44;
+        margin-top: 0;
+    }
+
+    .menu-item {
+        border-bottom: 1px solid #a1dfd4;
+        padding: 12px 0;
+    }
+
+    .menu-item:last-child {
+        border-bottom: none;
+    }
+
+    .price {
+        float: right;
+        font-weight: bold;
+        color: #0b7d71;
+    }
+
+    form label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    form input, form select, form textarea {
+        width: 100%;
+        padding: 9px;
+        margin-top: 5px;
+        border-radius: 6px;
+        border: 1px solid #8fd4c9;
+    }
+
+    form button {
+        margin-top: 15px;
+        padding: 10px 22px;
+        background: #0b7d71;
+        color: white;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .review {
+        background: #e3fff8;
+        padding: 12px;
+        border-left: 4px solid #0b7d71;
+        border-radius: 6px;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        background: #0b7d71;
+        color: white;
+        text-align: center;
+        padding: 16px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>FlavourHub Restaurant</h1>
+    <p>Where Taste Meets Freshness 🍽✨</p>
+</header>
+
+<nav>
+    <a href="#menu">Menu</a>
+    <a href="#reservation">Reservation</a>
+    <a href="#reviews">Reviews</a>
+</nav>
+
+<main>
+
+<section id="menu">
+    <h2>🍕 Our Menu</h2>
+
+    <div class="menu-item">
+        <strong>Margherita Pizza</strong>
+        <span class="price">₹250</span>
+        <p>Classic Italian pizza with basil & mozzarella.</p>
+    </div>
+
+    <div class="menu-item">
+        <strong>Paneer Tikka</strong>
+        <span class="price">₹180</span>
+        <p>Spicy grilled paneer served with mint chutney.</p>
+    </div>
+
+    <div class="menu-item">
+        <strong>Veg Biryani</strong>
+        <span class="price">₹220</span>
+        <p>Traditional aromatic rice with vegetables.</p>
+    </div>
+
+    <div class="menu-item">
+        <strong>Cold Coffee</strong>
+        <span class="price">₹120</span>
+        <p>Refreshing chilled coffee with ice-cream.</p>
+    </div>
+</section>
+
+<section id="reservation">
+    <h2>📅 Online Reservation</h2>
+    <form>
+        <label>Your Name</label>
+        <input type="text" required>
+
+        <label>Email</label>
+        <input type="email" required>
+
+        <label>Phone</label>
+        <input type="tel" required>
+
+        <label>Guests</label>
+        <select required>
+            <option value="">-- Select --</option>
+            <option>1-2 Guests</option>
+            <option>3-5 Guests</option>
+            <option>6-10 Guests</option>
+        </select>
+
+        <label>Date & Time</label>
+        <input type="datetime-local" required>
+
+        <label>Message</label>
+        <textarea rows="3"></textarea>
+
+        <button type="submit">Reserve Now</button>
+    </form>
+</section>
+
+<section id="reviews">
+    <h2>⭐ Customer Reviews</h2>
+
+    <div class="review">"Amazing freshness & taste!"<br><strong>- Priya</strong></div>
+    <div class="review">"Best paneer tikka in town 😋"<br><strong>- Abhishek</strong></div>
+    <div class="review">"Loved their cold coffee!"<br><strong>- Nisha</strong></div>
+</section>
+
+</main>
+
+<footer>
+    © 2025 FlavourHub Restaurant | Fresh & Delicious ✨
+</footer>
+
+</body>
+</html>
